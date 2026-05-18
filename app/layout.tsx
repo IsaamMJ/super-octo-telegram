@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
@@ -47,6 +47,12 @@ export const metadata: Metadata = {
       "High-pressure flanges and fittings to ANSI, ASME, DIN, BS and JIS. ISO, TÜV and CE certified. Dubai sales hub for worldwide industrial buyers.",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#F4EFE6",
 };
 
 export default function RootLayout({
